@@ -25,6 +25,11 @@ public class DockerExampleApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(DockerExampleApplication.class, args);
 	}
+	@GetMapping(value="userDetails")
+	public String getUserDetails()
+	{
+		return "User Details";
+	}
 
 }
 // http://hostname:portnumber/docker/hello
