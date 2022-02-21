@@ -22,11 +22,7 @@ public class DockerExampleApplication {
 	{
 		return "Welcome "+uname;
 	}
-	@GetMapping("/{name}")
-public String getEmployee(@PathVariable String name)
-{
-	return "Hello "+name+" Welcome to Microservices";
-}
+	
 	public static void main(String[] args) {
 		SpringApplication.run(DockerExampleApplication.class, args);
 	}
